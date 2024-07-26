@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Text;
 
-namespace ProdutoAPI
+namespace ProdutoAPI.Infrastructure.Autenticacao
 {
     public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
@@ -31,9 +31,9 @@ namespace ProdutoAPI
             try
             {
                 var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
-                var credentials = Encoding.UTF8.GetString(Convert.FromBase64String(authHeader.Parameter)).Split(':');
-                var login = credentials[0];
-                var senha = credentials[1];
+                var credenciais = Encoding.UTF8.GetString(Convert.FromBase64String(authHeader.Parameter)).Split(':');
+                var login = credenciais[0];
+                var senha = credenciais[1];
 
                 var cliente = await _dbContext.Clientes.SingleOrDefaultAsync(c => c.Login == login);
                 if (cliente == null || !BCrypt.Net.BCrypt.Verify(senha, cliente.Senha))

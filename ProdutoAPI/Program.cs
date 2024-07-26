@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using ProdutoAPI;
 using ProdutoAPI.Data;
+using ProdutoAPI.Infrastructure.Autenticacao;
 using ProdutoAPI.Repositories;
 using ProdutoAPI.Services;
 
