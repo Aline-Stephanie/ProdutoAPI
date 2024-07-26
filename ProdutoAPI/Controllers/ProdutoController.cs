@@ -20,6 +20,10 @@ namespace ProdutoAPI.Controllers
         public async Task<IActionResult> LeituraDeLista()
         {
             var produtos = await _produtoService.ObterTodos();
+            if (produtos is null)
+            {
+                return NotFound();
+            }
             return Ok(produtos);
         }
 
