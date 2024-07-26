@@ -12,12 +12,12 @@
 
 ## Funcionalidades
   Nesta API temos as seguintes funcionalidades abaixo:
-1. 'Obter todos os produtos': é obtido um JSON com uma listagem de todos os produtos presentes na tabela _produtos_.
-2. 'Adicionar um produto': adiciona um novo produto.
-3. 'Editar um produto': edita o produto, ao inserir um _id_ existente.
-4. 'Obter um produto por id': é obtido um JSON com o produto que possui o _id_ informado na requisição.
-5. 'Remover um produto por id': remove o produto, ao inserir um _id_ existente.
-6. 'Obter o Dashboard': é obtido um JSON que agrupa os tipos de produto e retorna a quantidade de produtos daquele tipo e o preço médio. Como na imagem abaixo:
+1. `Obter todos os produtos`: é obtido um JSON com uma listagem de todos os produtos presentes na tabela _produtos_.
+2. `Adicionar um produto`: adiciona um novo produto.
+3. `Editar um produto`: edita o produto, ao inserir um _id_ existente.
+4. `Obter um produto por id`: é obtido um JSON com o produto que possui o _id_ informado na requisição.
+5. `Remover um produto por id`: remove o produto, ao inserir um _id_ existente.
+6. `Obter o Dashboard`: é obtido um JSON que agrupa os tipos de produto e retorna a quantidade de produtos daquele tipo e o preço médio. Como na imagem abaixo:
  <img src="https://github.com/user-attachments/assets/492aa646-a2b4-4f00-b8ca-352655544d5a" width="200">
 
 Ao executar a API o Swagger apresenta todas as suas funcionalidades, como na imagem que se segue:
